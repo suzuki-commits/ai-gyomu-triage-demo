@@ -21,10 +21,13 @@ em{font-style:normal}
 /* header / footer */
 .site-head{background:linear-gradient(100deg,var(--ink),var(--ink2));color:#fff}
 .site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{display:flex;align-items:baseline;gap:12px}
+.brand{display:flex;align-items:center;gap:14px}
 .brand-mark{font-weight:800;letter-spacing:.14em;font-size:20px}
 .brand-mark::before{content:"";display:inline-block;width:10px;height:10px;background:var(--vermil);border-radius:2px;margin-right:8px;transform:translateY(1px)}
+.brand-logo-chip{display:inline-flex;align-items:center;background:#fff;border-radius:9px;padding:6px 12px;box-shadow:0 1px 4px rgba(0,0,0,.18)}
+.brand-logo{height:26px;width:auto;display:block}
 .brand-sub{font-size:12.5px;letter-spacing:.16em;color:#b9c3dd;text-transform:uppercase}
+@media(max-width:520px){.brand-sub{display:none}.brand-logo{height:22px}}
 .site-foot{margin-top:56px;padding:22px 0;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line)}
 
 /* hero */
